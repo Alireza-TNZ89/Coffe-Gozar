@@ -1,0 +1,165 @@
+body {
+   background-color: #f6fff8;
+   color: #24403a;
+   font-family: 'Vazirmatn', Tahoma, sans-serif;
+   margin: 0;
+   padding: 8px;
+}
+
+#header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 12px;
+   padding: 10px 20px;
+   background-color: #eaf4f4;
+   color: #24403a;
+   border-radius: 10px;
+   border: 2px solid #a4c3b2;
+}
+
+#name-coffee {
+   flex: 1;
+}
+
+#name-coffee h2 {
+   margin: 0;
+   font-size: larger;
+   font-style: oblique;
+}
+
+nav ul {
+   display: flex;
+   list-style: none;
+   gap: 60px;
+   margin: 0;
+   padding: 0;
+}
+
+nav a {
+   color: #24403a;
+   text-decoration: none;
+   transition: color 160ms ease;
+}
+
+nav a:hover {
+   color: #6b9080;
+}
+
+#sabd-kharid {
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+}
+
+#sabd-kharid a {
+   display: inline-block;
+   padding: 10px 18px;
+   background-color: #a4c3b2;
+   color: #24403a;
+   font-weight: 700;
+   text-decoration: none;
+   border-radius: 999px;
+   box-shadow: 0 4px 0 #6b9080;
+   transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+#sabd-kharid a:hover {
+   filter: brightness(1.05);
+   box-shadow: 0 2px 0 #6b9080;
+   transform: translateY(2px);
+}
+
+#sabd-kharid a:focus-visible {
+   outline: 2px solid #6b9080;
+   outline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+   nav {
+      order: 3;
+      width: 100%;
+   }
+
+   nav ul {
+      justify-content: center;
+      gap: 24px;
+   }
+}
+
+.cards {
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   gap: 20px;
+   flex-wrap: wrap;
+   padding: 20px;
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.card {
+   width: 270px;
+   background-color: #cce3de;
+   padding: 8px;
+   border-radius: 13px;
+   border: 3px solid #a4c3b2;
+   box-sizing: border-box;
+   color: #24403a;
+   display: flex;
+   flex-direction: column;
+}
+
+.card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+.card-info {
+   margin-top: 10px;
+   margin-bottom: 5px;
+   text-align: center;
+   color: #24403a;
+   flex-grow: 1;
+}
+
+.card-info h2 {
+   font-size: 18px;
+   font-weight: 700;
+   margin: 0 0 4px 0;
+}
+
+.card-info span {
+   display: block;
+   font-size: 13px;
+   color: #24403a;
+}
+
+.card-info .price {
+   margin-top: 4px;
+   font-size: 15px;
+   font-weight: 700;
+   color: #24403a;
+}
+
+.btn-add {
+   display: block;
+   width: 100%;
+   padding: 8px 10px;
+   margin-top: 10px;
+   border: 2px solid #6b9080;
+   border-radius: 10px;
+   background-color: #f6fff8;
+   color: #24403a;
+   font-size: 14px;
+   font-family: inherit;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+.btn-add:hover {
+   background-color: #a4c3b2;
+}
